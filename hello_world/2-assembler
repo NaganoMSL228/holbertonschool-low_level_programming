@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc -S "$CFILE" -o "${CFILE%.c}.s"
+filename=$(basename -- "$CFILE" .c)
+gcc -S "$CFILE" -o "${filename}.s"
