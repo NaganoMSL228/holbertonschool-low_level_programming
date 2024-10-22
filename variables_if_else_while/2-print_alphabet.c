@@ -21,3 +21,4 @@ putchar(c);
 putchar('\n');
 
 return (0);
+}
