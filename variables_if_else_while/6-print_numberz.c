@@ -1,11 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <unistd.h>
 
 /**
- * main - Prints the alphabet in uppercase
+ * main - Entry point
  *
- * Description: This program prints the alphabet in uppercase,
- * followed by a new line. Only putchar can be used.
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -16,6 +13,7 @@ int main(void)
 	{
 		putchar(i + '0');
 	}
-	putchar('\n';
-return(0);
+	putchar('\n');
+
+	return (0);
 }
