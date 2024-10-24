@@ -2,7 +2,6 @@
 #include <unistd.h>
 #include "main.h"
 /**
- *
  * main - Entry point
  *
  * Description: PRINTS "_putchar" followed by a new line
