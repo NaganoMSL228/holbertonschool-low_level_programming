@@ -1,29 +1,22 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * print_alphabet_x10 -  Prints the alphabet 10 times
+ * print_alphabet_x10 - Entry point of the program
  *
- * Description: PRINTS "print_alphabet" followed by a new line
- * followed by a new line. Only _putchar can be used.
+ * Description: Prints a quote using the puts function
  * Return: Always 0 (Success)
  */
-void print_alphabet(void)
-{
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-	_putchar(letter);
-	}
-	_putchar('\n');
-}
 
 void print_alphabet_x10(void)
 {
-	int i;
-
-	for (i = 0; i < 10; i++)
-	{
-	print_alphabet();
-	}
+const char *alphabet = "abcdefghijklmnopqrstuvwxyz\n";
+int num;
+for (num = 0; num < 10; num++)
+{
+const char *current = alphabet;
+while (*current)
+{_putchar(*current++);
+}
+}
 }
