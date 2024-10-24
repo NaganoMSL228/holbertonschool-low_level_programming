@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabet -  Prints the alphabet in uppercase
+ * print_alphabet_x10 -  Prints the alphabet 10 times
  *
- * Description: This program prints the alphabet in lowercase,
+ * Description: PRINTS "print_alphabet" followed by a new line
  * followed by a new line. Only _putchar can be used.
  * Return: Always 0 (Success)
  */
