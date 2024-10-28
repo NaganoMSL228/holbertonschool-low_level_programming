@@ -7,6 +7,7 @@
  * Description: If size is 0 or less, only prints a newline
  * Uses the character # to print the triangle
  */
+
 void print_triangle(int size)
 {
 int row, space, hash;
