@@ -10,24 +10,23 @@
 
 void print_triangle(int size)
 {
-int row, space, hash;
+int row, col;
+
 if (size <= 0)
 {
 _putchar('\n');
+return;
 }
-else
-{
+
 for (row = 1; row <= size; row++)
 {
-for (space = size - row; space > 0; space--)
+for (col = 1; col <= size; col++)
 {
+if (col <= size - row)
 _putchar(' ');
-}
-for (hash = 1; hash <= row; hash++)
-{
+else
 _putchar('#');
 }
 _putchar('\n');
-}
 }
 }
