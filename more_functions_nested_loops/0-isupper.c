@@ -1,16 +1,10 @@
-#include "main.h"
-#include <stdio.h>
+#ifndef MAIN_H
+#define MAIN_H
 
+/* Déclarations de fonctions */
+int _putchar(char c);
 int _isupper(int c);
+/* ... autres déclarations ... */
+void print_square(int size);
 
-int main(void)
-{
-char test_char = 'G';
-
-if (_isupper(test_char))
-printf("%c is uppercase\n", test_char);
-else
-printf("%c is not uppercase\n", test_char);
-
-return 0;
-}
+#endif /* MAIN_H */
