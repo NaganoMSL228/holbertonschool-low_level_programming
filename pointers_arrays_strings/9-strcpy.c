@@ -1,24 +1,20 @@
-#include "main.h"
-
 /**
- * puts_half - prints half of a string
- * @str: the string to print
+ * _strcpy - Copies the string pointed to by src to dest
+ * @dest: Pointer to the destination buffer
+ * @src: Pointer to the source string
+ *
+ * Return: Pointer to dest
  */
-void puts_half(char *str)
+char *_strcpy(char *dest, char *src)
 {
-int length = 0;
-int i;
+int i = 0;
 
-while (str[length] != '\0')
-length++;
-
-i = (length + 1) / 2;
-
-while (str[i] != '\0')
+while (src[i] != '\0')
 {
-_putchar(str[i]);
+dest[i] = src[i];
 i++;
 }
+dest[i] = '\0';
 
-_putchar('\n');
+return dest;
 }
