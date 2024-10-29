@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - Imprime un caractère sur deux d'une chaîne, en commençant par le premier
+ * puts2 - Imprime un caractère sur deux d'une chaîne, en commenç
  * @str: Pointeur vers la chaîne à imprimer
  */
 void puts2(char *str)
