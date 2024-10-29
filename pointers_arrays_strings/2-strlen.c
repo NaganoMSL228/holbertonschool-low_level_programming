@@ -6,6 +6,7 @@
  *
  * Return: La longueur de la chaîne
  */
+
 int _strlen(char *s)
 {
 int nur = 0;
@@ -15,6 +16,5 @@ while (*s != '\0')
 nur++;
 s++;
 }
-
 return nur;
 }
