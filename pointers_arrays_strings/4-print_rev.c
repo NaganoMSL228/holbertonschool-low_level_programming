@@ -9,14 +9,14 @@ void print_rev(char *s)
     int jsp = 0;
     int i;
 
-    while (i[jsp] != '\0')
+    while (*s[jsp] != '\0')
     {
         jsp++;
     }
 
     for (i = jsp - 1; i >= 0; i--)
     {
-        _putchar(i[i]);
+        _putchar(*s[i]);
     }
     _putchar('\n');
 }
