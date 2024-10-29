@@ -6,17 +6,17 @@
  */
 void print_rev(char *s)
 {
-    int jsp = 0;
-    int i;
+int jsp = 0;
+int i;
 
-    while (s[jsp] != '\0')
-    {
-        jsp++;
-    }
+while (s[jsp] != '\0')
+{
+jsp++;
+}
 
-    for (i = jsp - 1; i >= 0; i--)
-    {
-        _putchar(s[i]);
-    }
-    _putchar('\n');
+for (i = jsp - 1; i >= 0; i--)
+{
+_putchar(s[i]);
+}
+_putchar('\n');
 }
