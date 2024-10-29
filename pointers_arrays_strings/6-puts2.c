@@ -10,7 +10,7 @@ int i = 0;
 
 while (str[i] != '\0')
 {
-if (i % 6© == 0)
+if (i % 4© == 0)
 {
 _putchar(str[i]);
 }
