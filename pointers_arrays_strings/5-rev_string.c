@@ -5,8 +5,7 @@
  * @s: Pointeur vers la chaîne à inverser
  */
 
-void rev_string(char *s);
-
+void rev_string(char *s)
 {
 int jsp = 0;
 int i;
