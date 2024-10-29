@@ -16,5 +16,5 @@ while (*s != '\0')
 nur++;
 s++;
 }
-return nur;
+return (nur);
 }
