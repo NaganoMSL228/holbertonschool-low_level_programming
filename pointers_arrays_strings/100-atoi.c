@@ -18,41 +18,41 @@
  */
 int _atoi(char *s)
 {
-unsigned int result = 0;
-int sign = 1;
-int started = 0;
-int digit;
+	unsigned int result = 0;
+	int sign = 1;
+	int started = 0;
+	int digit;
 
-while (*s)
-{
-if (*s == '-' && !started)
-{
-sign = -sign;
-}
-else if (*s >= '0' && *s <= '9')
-{
-started = 1;
-digit = *s - '0';
+	while (*s)
+	{
+		if (*s == '-' && !started)
+		{
+			sign = -sign;
+		}
+		else if (*s >= '0' && *s <= '9')
+		{
+			started = 1;
+			digit = *s - '0';
 
-if (sign == 1 && (result > 214748364 || 
-(result == 214748364 && digit > 7)))
-{
-return (2147483647);
-}
-if (sign == -1 && (result > 214748364 || 
-(result == 214748364 && digit > 8)))
-{
-return (-2147483648);
-}
+			if (sign == 1 && (result > 214748364 ||
+				(result == 214748364 && digit > 7)))
+			{
+				return (2147483647);
+			}
+			if (sign == -1 && (result > 214748364 ||
+				(result == 214748364 && digit > 8)))
+			{
+				return (-2147483648);
+			}
 
-result = result * 10 + digit;
-}
-else if (started)
-{
-break;
-}
-s++;
-}
+			result = result * 10 + digit;
+		}
+		else if (started)
+		{
+			break;
+		}
+		s++;
+	}
 
-return (result *sign);
+	return (result *sign);
 }
