@@ -36,11 +36,11 @@ digit = *s - '0';
 
 if (sign == 1 && (result > 214748364 || (result == 214748364 && digit > 7)))
 {
-return 2147483647;
+return (2147483647);
 }
 if (sign == -1 && (result > 214748364 || (result == 214748364 && digit > 8)))
 {
-return -2147483648;
+return (-2147483648);
 }
 
 result = result * 10 + digit;
@@ -52,5 +52,5 @@ break;
 s++;
 }
 
-return result * sign;
+return (result*sign);
 }
