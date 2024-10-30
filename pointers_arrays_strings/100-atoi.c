@@ -36,7 +36,7 @@ digit = *s - '0';
 
 if (sign == 1 && (result > 214748364 || (result == 214748364 && digit > 7)))
 {
-return 2147483647;  // INT_MAX
+return 2147483647;
 }
 if (sign == -1 && (result > 214748364 || (result == 214748364 && digit > 8)))
 {
