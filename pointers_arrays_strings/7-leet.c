@@ -29,7 +29,7 @@ char *leet(char *);
 	ibt i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
-	{
+{
 	for (j = 0; j < 10; j++)
 {
 		if (str[i] == leet[j])
@@ -40,5 +40,5 @@ char *leet(char *);
 }
 }
 
-	return ptr;
+	return (ptr);
 }
