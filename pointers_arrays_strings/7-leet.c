@@ -29,16 +29,16 @@ char *leet(char *);
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
-{
+	{
 	for (j = 0; j < 10; j++)
-{
+	{
 		if (str[i] == leet[j])
-{
+		{
 			str[i] = leet_replace[j];
 			break;
-}
-}
-}
+		}
+	}
+	}
 
 	return (ptr);
 }
