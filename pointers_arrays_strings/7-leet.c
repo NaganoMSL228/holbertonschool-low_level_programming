@@ -4,20 +4,10 @@
  * leet - Encode une chaîne de caractères en 1337 (leet speak)
  * @str: La chaîne de caractères à encoder
  *
- * Description:
- * Cette fonction prend une chaîne de caractères en entrée et la modifie
- * en remplaçant certaines lettres par leurs équivalents en 1337 :
- * - 'a' et 'A' sont remplacés par '4'
- * - 'e' et 'E' sont remplacés par '3'
- * - 'o' et 'O' sont remplacés par '0'
- * - 't' et 'T' sont remplacés par '7'
- * - 'l' et 'L' sont remplacés par '1'
- *
- * La fonction utilise deux boucles :
- * - Une boucle externe pour parcourir chaque caractère de la chaîne
- * - Une boucle interne pour vérifier si le caractère doit être remplacé
- *
- * La fonction ne modifie que les caractères spécifiés et laisse les autres inchangés.
+ * Description: Cette fonction remplace certaines lettres par leurs
+ * équivalents en 1337 :
+ * 'a'/'A' -> '4', 'e'/'E' -> '3', 'o'/'O' -> '0',
+ * 't'/'T' -> '7', 'l'/'L' -> '1'
  *
  * Return: Un pointeur vers la chaîne modifiée
  */
