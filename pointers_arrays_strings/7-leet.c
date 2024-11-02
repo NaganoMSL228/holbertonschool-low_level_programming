@@ -26,7 +26,7 @@ char *leet(char *);
 	char *ptr = str;
 	char leet[] = "aAeEoOtTlL";
 	char leet_replace = "4433007711";
-	ibt i, j;
+	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 {
