@@ -17,28 +17,28 @@
  * - Une boucle externe pour parcourir chaque caractère de la chaîne
  * - Une boucle interne pour vérifier si le caractère doit être remplacé
  *
- * La fonction ne modifie que les caractères spécifi
+ * La fonction ne modifie que les caractères spécifiés et laisse les autres inchangés.
  *
  * Return: Un pointeur vers la chaîne modifiée
  */
-char *leet(char *);
+char *leet(char *str)
 {
 	char *ptr = str;
 	char leet[] = "aAeEoOtTlL";
-	char leet_replace = "4433007711";
+	char leet_replace[] = "4433007711";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
 	for (j = 0; j < 10; j++)
-	{
-		if (str[i] == leet[j])
 		{
+		if (str[i] == leet[j])
+			{
 			str[i] = leet_replace[j];
 			break;
+			}
 		}
 	}
-	}
 
-	return (ptr);
+	return ptr;
 }
