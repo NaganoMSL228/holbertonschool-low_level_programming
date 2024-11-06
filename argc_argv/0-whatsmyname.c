@@ -1,21 +1,11 @@
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 
 int main(int argc, char *argv[])
 {
-char *program_name = argv[0];
-
-
-char *last_slash = strrchr(program_name, '/');
-
-if (last_slash != NULL) {
-
-printf("%s\n", last_slash + 1);
-} else
+for (int i = 0; i < argc; i++)
 {
-
-printf("%s\n", program_name);
+printf("Argument %d: %s\n", i, argv[i]);
 }
-
 return 0;
 }
