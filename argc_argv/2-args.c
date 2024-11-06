@@ -13,7 +13,7 @@ int i;
 
 for (i = 0; i < argc; i++)
 {
-printf("%s\n", argv[i]);  // Print each argument on a new line
+printf("%s\n", argv[i]);
 }
 
 return (0);
