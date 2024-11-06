@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-int sum = 0;  // Variable to store the sum
+int sum = 0;
 int i, j;
 
 if (argc == 1)
