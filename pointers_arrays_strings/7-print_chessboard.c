@@ -6,18 +6,18 @@
  *
  * Description: This function prints an 8x8 chessboard
  */
-void print_chessboard(char (*a)[8]);
+void print_chessboard(char (*a)[8])
 {
-int row, col;
+	int row, col;
 
-for (row = 0; row < 8; row++)
-{
-for (col = 0; col < 8; col++)
-{
-printf("%c", a[row][col]);
-if (col < 7)
-printf(" ");
-}
-printf("\n");
-}
+	for (row = 0; row < 8; row++)
+	{
+		for (col = 0; col < 8; col++)
+		{
+			_putchar(a[row][col]);
+			if (col < 7)
+				_putchar(' ');
+		}
+		_putchar('\n');
+	}
 }
