@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
 create_array - multiply numbers
 @size : variable for the first number
