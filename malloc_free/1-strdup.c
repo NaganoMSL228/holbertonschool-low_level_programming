@@ -2,25 +2,31 @@
 #include <string.h>
 
 /**
- * _strdup - Duplicates a string using dynamic memory allocation
+ * _strdup - Returns a pointer to a newly allocated space in memory,
+ *           containing a copy of the string given as a parameter.
  * @str: The string to duplicate
  *
- * Return: A pointer to the duplicated string, or NULL if str is NULL or if
- *         memory allocation fails
+ * Return: A pointer to the duplicated string, or NULL if it fails
  */
 char *_strdup(char *str)
 {
 char *duplicate;
-size_t len;
+unsigned int length, i;
 
 if (str == NULL)
 return (NULL);
 
-len = strlen(str);
-duplicate = malloc(sizeof(char) * (len + 1));
+length = 0;
+while (str[length] != '\0')
+length++;
+
+duplicate = malloc(sizeof(char) * (length + 1));
+
 if (duplicate == NULL)
 return (NULL);
 
-strcpy(duplicate, str);
+for (i = 0; i <= length; i++)
+duplicate[i] = str[i];
+
 return (duplicate);
 }
