@@ -1,26 +1,31 @@
+#include "main.h"
 #include <stdlib.h>
-
 /**
- * create_array - Creates an array of chars and initializes it with a specific 
- * @size: The size of the array to create
- * @c: The char to initialize the array with
+create_array - multiply numbers
+@size : variable for the first number
+@c : variable for the seconde number
  *
- * Return: A pointer to the array, or NULL if it fails
+Descritpion : multiply variable a and variable b
+Return: return 0
  */
 char *create_array(unsigned int size, char c)
 {
-char *array;
+char *tab;
 unsigned int i;
-
 if (size == 0)
-return (NULL);
-
-array = malloc(sizeof(char) * size);
-if (array == NULL)
-return (NULL);
-
+{
+return (0);
+}
+tab = (char *) malloc(size * sizeof(char));
+if (tab == 0)
+{
+return (0);
+}
 for (i = 0; i < size; i++)
-array[i] = c
-
-return (array);
+{
+tab[i] = c;
+}
+tab[i] = '\0';
+return (tab);
+free(tab);
 }
