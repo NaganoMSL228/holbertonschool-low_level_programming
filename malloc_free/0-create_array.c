@@ -2,12 +2,13 @@
 #include <stdlib.h>
 
 /**
-create_array - multiply numbers
-@size : variable for the first number
-@c : variable for the seconde number
+ * create_array - Creates an array of chars and initializes it with a specific char
+ * @size: The size of the array to be created
+ * @c: The char to initialize the array with
  *
-Descritpion : multiply variable a and variable b
-Return: return 0
+ * Description: This function creates an array of chars and initializes
+ * each element with the specified char
+ * Return: A pointer to the array, or NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
