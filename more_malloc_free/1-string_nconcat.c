@@ -28,7 +28,7 @@ if (n >= len2)
 n = len2;
 
 result = malloc(sizeof(char) * (len1 + n + 1));
-if (result == NULL);
+if (result == NULL)
 return (NULL);
 
 for (i = 0; i < len1; i++)
@@ -39,5 +39,5 @@ result[i] = s2[j];
 
 result[i] = '\0';
 
-return result;
+return (result);
 }
