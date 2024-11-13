@@ -21,9 +21,9 @@ if (s2 == NULL)
 s2 = "";
 
 for (len1 = 0; s1[len1]; len1++)
-
+;
 for (len2 = 0; s2[len2]; len2++)
-
+;
 if (n >= len2)
 n = len2;
 
