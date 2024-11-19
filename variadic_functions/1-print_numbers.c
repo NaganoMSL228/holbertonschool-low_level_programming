@@ -1,5 +1,5 @@
 #include <stdarg.h>
-#include "_variadic_"
+#include <stdarg.h>
 
 /**
  * print_numbers - Prints numbers followed by a new line
