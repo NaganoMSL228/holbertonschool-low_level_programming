@@ -1,29 +1,28 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <linux/stat.h>
-#include <sys/stat.h>
 
 #define BUFFER_SIZE 1024
 
 /**
- * error_exit - Print error message and exit with specified code
- * @code: Exit code
- * @message: Error message format
- * @arg: Argument for the error message
+ * error_exit - Affiche un message d'erreur et quitte le programme
+ * @code: Code de sortie
+ * @message: Message d'erreur
+ * @filename: Nom du fichier concerné
  */
-void error_exit(int code, const char *message, const char *arg)
+void error_exit(int code, const char *message, const char *filename)
 {
-dprintf(STDERR_FILENO, message, arg);
+dprintf(STDERR_FILENO, message, filename);
 exit(code);
 }
 
 /**
- * main - Copy content of one file to another
- * @argc: Argument count
- * @argv: Argument vector
- * Return: 0 on success, or exit with error code
+ * main - Copie le contenu d'un fichier dans un autre
+ * @argc: Nombre d'arguments
+ * @argv: Tableau des arguments
+ * Return: 0 en cas de succès, sinon le code d'erreur approprié
  */
 int main(int argc, char *argv[])
 {
@@ -53,10 +52,10 @@ if (rd == -1)
 error_exit(98, "Error: Can't read from file %s\n", argv[1]);
 
 if (close(fd_from) == -1)
-error_exit(100, "Error: Can't close fd %d\n", fd_from);
+error_exit(100, "Error: Can't close fd %d\n", argv[1]);
 
 if (close(fd_to) == -1)
-error_exit(100, "Error: Can't close fd %d\n", fd_to);
+error_exit(100, "Error: Can't close fd %d\n", argv[2]);
 
 return (0);
 }
