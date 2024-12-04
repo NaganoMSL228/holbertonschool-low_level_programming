@@ -23,8 +23,6 @@ void print_binary(unsigned long int n)
 	}
 }
 
-int main()
-
 {
 	unsigned long int n = 10;
 
