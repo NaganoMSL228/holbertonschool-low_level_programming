@@ -20,7 +20,8 @@ fd = open(filename, O_WRONLY | O_APPEND);
 if (fd == -1)
 return (-1);
 
-f (text_content != NULL)
+if (text_content != NULL)
+
 {
 while (text_content[len])
 len++;
