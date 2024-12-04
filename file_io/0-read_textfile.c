@@ -52,5 +52,4 @@ free(buffer);
 close(fd);
 
 return (bytes_written);
-
 }
