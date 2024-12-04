@@ -27,7 +27,7 @@ while (text_content[len])
 len++;
 w = write(fd, text_content, len);
 if (w == -1 || w != len)
-    {
+{
 close(fd);
 return (-1);
 }
